@@ -1,0 +1,39 @@
+{
+  "name": "adituum-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontity project",
+  "keywords": [
+    "frontity"
+  ],
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "dev": "frontity dev",
+    "lint": "eslint . --fix",
+    "build": "frontity build",
+    "serve": "frontity serve"
+  },
+  "prettier": {},
+  "dependencies": {
+    "@frontity/core": "^1.9.1",
+    "@frontity/google-analytics": "^1.3.1",
+    "@frontity/head-tags": "^1.0.8",
+    "@frontity/html2react": "^1.5.0",
+    "@frontity/tiny-router": "^1.2.3",
+    "@frontity/wp-source": "^1.10.0",
+    "adituum": "file:packages/adituum",
+    "frontity": "^1.13.0",
+    "frontity-contact-form-7": "^0.1.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5"
+  }
+}
