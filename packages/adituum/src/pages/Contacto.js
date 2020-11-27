@@ -9,7 +9,7 @@ const Contacto = ({ state, libraries }) => {
   return (
       <>
         <ContactForm>
-            <h1>Dinos cómo podemos ayudar</h1>
+            <h1>Dinos cómo podemos ayudarte</h1>
             <Html2React html={contactForm.content.rendered} />
         </ContactForm>
       </>
