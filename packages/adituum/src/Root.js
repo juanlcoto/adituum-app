@@ -8,21 +8,15 @@ import Home from './pages/Home'
 import Contacto from './pages/Contacto'
 import Privacidad from './pages/Privacidad'
 
-const Root = ({ state, actions }) => {
+const Root = ({ state }) => {
   const url = state.router.link
   const data = state.source.get(url)
-  useEffect(() => {
-    actions.source.fetch('/caracteristicas/')
-    actions.source.fetch('/tarifas/')
-    actions.source.fetch('/contacto/')
-  }, [])
 
   return (
     <>
         <Base />
         <Header />
         <StyleMain>
-          { data.isFetching && 'Loading...' }
           { data.isHome && <Home /> }
           { url === '/tarifas/' && <Tarifas /> }
           { url === '/caracteristicas/' && <Caracteristicas /> }
